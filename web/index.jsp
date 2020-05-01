@@ -36,7 +36,7 @@
 	<c:otherwise>
 		<form method="post" action="Controller?action=LogIn">
 			<p>
-				<label for="email">Username </label>
+				<label for="email">Your email </label>
 				<input type="text" id="email" name="email" value="jan123">
 			</p>
 			<p>
@@ -49,26 +49,26 @@
 		</form>
 	</c:otherwise>
 </c:choose>
-		<div><span id="test"></span></div>
+
+
+
 
 		<div class="card col-sm-10 mb-5 p-2">
 			<h3>Blog posts</h3>
 			<div class="list-group">
-				<a href="Controller?action=GetComment&commentNmbr=1" class="list-group-item list-group-item-action">Was het een interessante projectweek?</a><br>
-				<a href="Controller?action=GetComment&commentNmbr=2" class="list-group-item list-group-item-action">Wat ben je van plan om te doen vandaag?</a><br>
-				<a href="Controller?action=GetComment&commentNmbr=3" class="list-group-item list-group-item-action">Naar welke muziek ben je momenteel aan het luisteren?</a><br>
-				<a href="Controller?action=GetComment&commentNmbr=4" class="list-group-item list-group-item-action">Wat zijn de examenvragen voor het vak Web4?</a><br>
+				<a href="Controller?action=GetComment&commentNmbr=1" class="list-group-item list-group-item-action">Was het een interessante projectweek?</a>
+				<a href="Controller?action=GetComment&commentNmbr=2" class="list-group-item list-group-item-action">Wat ben je van plan om te doen vandaag?</a>
+				<a href="Controller?action=GetComment&commentNmbr=3" class="list-group-item list-group-item-action">Naar welke muziek ben je momenteel aan het luisteren?</a>
+				<a href="Controller?action=GetComment&commentNmbr=4" class="list-group-item list-group-item-action">Wat zijn de examenvragen voor het vak Web4?</a>
 				<a href="Controller?action=GetComment&commentNmbr=5" class="list-group-item list-group-item-action">Wat ga je doen na u studies?</a>
-
+				<a href="Controller?action=GetComment&commentNmbr=6" class="list-group-item list-group-item-action">Wat ga je doen na u studies?</a>
+				<a href="Controller?action=GetComment&commentNmbr=7" class="list-group-item list-group-item-action">Wat ga je doen na u studies?</a>
 			</div>
 		</div>
 
-
 	</main>
-
-
-
 	<script type="text/javascript" src="js/blog.js"></script>
+
 	<jsp:include page="footer.jsp">
 		<jsp:param name="title" value="Home" />
 	</jsp:include>

@@ -25,22 +25,17 @@
                         <option value="offline">
                         <option value="away">
                     </datalist>
-
                     </select>
-                <form method="post" action="Controller?action=LogOut">
-                    <input class="btn btn-primary" type="submit" id="logoutbutton" value="Log Out">
-                </form>
                 </p>
-                <h2>Friends</h2>
-                <h3>Add friend</h3>
-                <p>Write the name of the friend you want to add:</p>
-                <input type="text" name="Friend" id="newFriend" value="an555">
-                <input type="button" class="btn btn-primary" id="addFriendB" value="Add this friend!">
 
                 <input class="btn btn-primary" type="button" id="chgStatusB" value="Change Status"/>
 
-
-
+                <form method="post" action="Controller?action=LogOut">
+                    <input class="btn btn-primary" type="submit" id="logoutbutton" value="Log Out">
+                </form>
+                <form method="post" action="Controller?action=Home">
+                    <input class="btn btn-primary" type="submit" id="index" value="Home">
+                </form>
 
             </div>
         </div>
@@ -48,9 +43,14 @@
     </div>
     <div class="card col-sm-6 mb-5 p-2">
         <div class="card-body">
-
+            <h2>Friends</h2>
+            <h3>Add friend</h3>
+            <p>Write the name of the friend you want to add:</p>
+            <input type="text" name="Friend" id="newFriend" value="an555">
+            <input type="button" class="btn btn-primary" id="addFriendB" value="Add this friend!">
             <div class="mt-5">
                 <h3>Friendslist</h3>
+                <input type="button" class="btn btn-primary" id="toggleFriendList" value="Show/Hide friendlist">
                 <table class="table" id="tableFriendlist">
                     <thead>
                     <tr>

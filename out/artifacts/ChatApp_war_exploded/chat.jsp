@@ -5,11 +5,10 @@
 <jsp:include page="head.jsp">
     <jsp:param name="title" value="ChatApp" />
 </jsp:include>
-<body onload="getChatOffline();getOnlineRecursive();" class="bg-secondary" >
 <jsp:include page="header.jsp">
     <jsp:param name="title" value="Chat" />
 </jsp:include>
-<link rel="stylesheet" type="text/css" href="css/chatCss.css">
+<body onload="start();">
 <main>
     <div class="container">
         <h2>Welcome <span id="mainUser">${user.getUserId()}</span>!</h2>
@@ -40,11 +39,34 @@
 
             </div>
         </div>
+
     </div>
+    <div class="card col-sm-6 mb-5 p-2">
+        <div class="card-body">
+            <h2>Friends</h2>
+            <h3>Add friend</h3>
+            <p>Write the name of the friend you want to add:</p>
+            <input type="text" name="Friend" id="newFriend" value="an555">
+            <input type="button" class="btn btn-primary" id="addFriendB" value="Add this friend!">
+            <div class="mt-5">
+                <h3>Friendslist</h3>
+                <input type="button" class="btn btn-primary" id="toggleFriendList" value="Show/Hide friendlist">
+                <table class="table" id="tableFriendlist">
+                    <thead>
+                    <tr>
+                        <th scope="col">Username</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                    </thead>
+                    <tbody id="friendList">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
 </main>
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/countOnline.js"></script>
 <script type="text/javascript" src="js/statusAndFriendlist.js"></script>
 
 <jsp:include page="footer.jsp">

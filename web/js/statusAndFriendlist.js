@@ -24,6 +24,47 @@ logoutB.onclick = setOffline;
 
 window.onload = start;
 
+/*
+
+function onlinePersons() {
+
+    getOnlineListRqst.open("GET", "Controller?asyncAction=getOnlineFriends", true)
+    getOnlineListRqst.onreadystatechange = getOnlineStat();
+
+    getOnlineListRqst.send();
+}
+*/
+
+/*
+function offlinePersons() {
+    getOnlineListRqst.open("GET", "Controller?asyncAction=getOfflineFriends", true)
+    getOnlineListRqst.onreadystatechange = getFriendListData;
+    getOnlineListRqst.send();
+}
+*/
+
+/*function getOnlineStat() {
+    if (getOnlineListRqst.status == 200) {
+        if (getOnlineListRqst.readyState == 4) {
+            var onlineFriends = getOnlineListRqst.responseText;
+            var onlineDiv = document.getElementById("online")
+            var onlineP = onlineDiv.childNodes[0];
+            if (onlineP == null) {
+                onlineP = document.createElement('p');
+                onlineP.id = "onlineT";
+                var onlineT = document.createTextNode(onlineFriends);
+                onlineP.appendChild(onlineT);
+                onlineDiv.appendChild(onlineP);
+            } else {
+                var onlineT = document.createTextNode(onlineFriends);
+                onlineP.removeChild(onlineP.childNodes[0]);
+                onlineP.appendChild(onlineT);
+            }
+            setTimeout("getOnlineStat() ", 200);
+        }
+
+    }
+}*/
 
 //UserStatus functions
 function changeStatus() //changes status based on what the user inputs on the website

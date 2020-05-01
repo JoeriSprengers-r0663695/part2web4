@@ -13,11 +13,11 @@ public class GetComment extends RequestHandler
         String destination = "index.jsp";
         List<String> comments = this.getComment(5);
         String articleNmbrStr = request.getParameter("commentNmbr");
-        System.out.println(articleNmbrStr + "is de comment nr");
         int commentNmbr = Integer.parseInt(articleNmbrStr);
         if(!(comments.get(commentNmbr - 1) == null))
         {
             destination = "comment" + (commentNmbr) + ".jsp";
+            System.out.println(destination);
         }
 
         return destination;
